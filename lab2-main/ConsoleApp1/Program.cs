@@ -59,57 +59,82 @@ class Program
 
     public static void ShowMainMenu()
     {
-        Console.WriteLine();
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine("Головне меню:");
-        Console.ResetColor();
-        Console.WriteLine("1. Товари");
-        Console.WriteLine("2. Студенти");
-        Console.WriteLine("3. Викладачі");
-        Console.WriteLine("4. Замовлення");
-        Console.WriteLine("5. Пошук");
-        Console.WriteLine("6. Статистика");
-        Console.WriteLine("7. Вихід");
+        int attempts = 0;
+        const int maxAttempts = 3;
 
-        int choice = GetIntInput("Виберіть пункт меню:");
-
-        switch (choice)
+        while (true)
         {
-            case 1:
-                ShowProductMenu();
-                break;
-            case 2:
-                ShowPupilMenu();
-                break;
-            case 3:
-                ShowTeacherMenu();
-                break;
-            case 4:
-                ShowOrderMenu();
-                break;
-            case 5:
-                Console.WriteLine("Пошук — функція в розробці");
-                break;
-            case 6:
-                Console.WriteLine("Статистика — функція в розробці");
-                break;
-            case 7:
-                Console.WriteLine("Бувай!");
-                Environment.Exit(0);
-                break;
-            default:
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Неправильний вибір. Спробуйте ще раз.");
-                Console.ResetColor();
-                break;
-        }
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Головне меню:");
+            Console.ResetColor();
+            Console.WriteLine("1. Товари");
+            Console.WriteLine("2. Студенти");
+            Console.WriteLine("3. Викладачі");
+            Console.WriteLine("4. Замовлення");
+            Console.WriteLine("5. Пошук");
+            Console.WriteLine("6. Статистика");
+            Console.WriteLine("7. Вихід");
 
-        Console.WriteLine("\nНатисніть будь-яку клавішу щоб повернутися в головне меню...");
-        Console.ReadKey();
-        Console.Clear();
-        RenderIntro();
-        ShowMainMenu(); 
+            int choice = 0;
+
+            try
+            {
+                choice = GetIntInput("Виберіть пункт меню:");
+
+                switch (choice)
+                {
+                    case 1:
+                        ShowProductMenu();
+                        break;
+                    case 2:
+                        ShowPupilMenu();
+                        break;
+                    case 3:
+                        ShowTeacherMenu();
+                        break;
+                    case 4:
+                        ShowOrderMenu();
+                        break;
+                    case 5:
+                        Console.WriteLine("Пошук — функція в розробці");
+                        break;
+                    case 6:
+                        Console.WriteLine("Статистика — функція в розробці");
+                        break;
+                    case 7:
+                        Console.WriteLine("Бувай!");
+                        Environment.Exit(0);
+                        break;
+                    default:
+                        throw new Exception("Неправильний вибір.");
+                }
+
+             
+                attempts = 0;
+
+            }
+            catch (Exception ex)
+            {
+                attempts++;
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"Помилка: {ex.Message} Спроба {attempts} з {maxAttempts}.");
+                Console.ResetColor();
+
+                if (attempts >= maxAttempts)
+                {
+                    Console.WriteLine("Ви вичерпали 3 спроби. Програма завершує роботу.");
+                    Environment.Exit(0);
+                }
+            }
+
+            Console.WriteLine("\nНатисніть будь-яку клавішу щоб повернутися в головне меню...");
+            Console.ReadKey();
+            Console.Clear();
+            RenderIntro();
+        }
     }
+
 
     private static void ShowOrderMenu()
     {
