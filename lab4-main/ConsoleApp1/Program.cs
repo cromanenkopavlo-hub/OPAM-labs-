@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace CoursesConsoleApp_1
@@ -16,6 +17,7 @@ namespace CoursesConsoleApp_1
     class Program
     {
         static UserSession CurrentSession = new UserSession();
+
         const string ADMIN_USERNAME = "admin";
         const string ADMIN_PASSWORD = "admin123";
 
@@ -52,6 +54,7 @@ namespace CoursesConsoleApp_1
 
         static double GetDoubleInput(string prompt = "Введіть число:")
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write(prompt + " ");
             string input = Console.ReadLine();
             if (double.TryParse(input, out double res) && res >= 0)
@@ -119,10 +122,10 @@ namespace CoursesConsoleApp_1
                         }
                         break;
                     case 2:
-                        Console.WriteLine("В розробці для студентів...");
+                        if (AuthenticateAccount(Role.Student)) return;
                         break;
                     case 3:
-                        Console.WriteLine("В розробці для викладачів...");
+                        if (AuthenticateAccount(Role.Teacher)) return;
                         break;
                     case 4:
                         Environment.Exit(0);
@@ -138,25 +141,51 @@ namespace CoursesConsoleApp_1
 
         static bool AuthenticateAdmin()
         {
-            Console.WriteLine("\n=== Авторизація: Адміністратор ===");
-
-            try
-            {
-                string login = GetStringInput("Логін:");
-                string pass = GetStringInput("Пароль:");
-
-                return login == ADMIN_USERNAME && pass == ADMIN_PASSWORD;
-            }
-            catch (Exception ex)
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Сталася помилка при введенні даних!");
-                Console.WriteLine($"Деталі: {ex.Message}");
-                Console.ResetColor();
-                return false;
-            }
+            string login = GetStringInput("Логін:");
+            string pass = GetStringInput("Пароль:");
+            return login == ADMIN_USERNAME && pass == ADMIN_PASSWORD;
         }
 
+        static bool AuthenticateAccount(Role role)
+        {
+            string roleName = role == Role.Student ? "Студент" : "Викладач";
+            Console.WriteLine($"\n=== Авторизація: {roleName} ===");
+            string login = GetStringInput("Логін:");
+            string pass = GetStringInput("Пароль:");
+
+            var list = role == Role.Student ? (List<object>)students.Cast<object>().ToList() : teachers.Cast<object>().ToList();
+            var acc = list.FirstOrDefault(x => (role == Role.Student ? ((Students)x).Username : ((Teachers)x).Username) == login);
+
+            if (acc != null)
+            {
+                string storedPass = role == Role.Student ? ((Students)acc).Password : ((Teachers)acc).Password;
+                if (storedPass == pass)
+                {
+                    CurrentSession.Username = login;
+                    CurrentSession.Role = role;
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine($"Успішний вхід як {roleName} ({login}).");
+                    Console.ResetColor();
+                    return true;
+                }
+            }
+
+            // реєстрація нового акаунта
+            Console.WriteLine($"Акаунт не знайдено. Створити новий акаунт? (1-Так, 0-Ні)");
+            int choice = GetIntInput();
+            if (choice == 1)
+            {
+                if (role == Role.Student) students.Add(new Students(login, pass));
+                else teachers.Add(new Teachers(login, pass));
+                CurrentSession.Username = login;
+                CurrentSession.Role = role;
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"Акаунт створено як {roleName} ({login}).");
+                Console.ResetColor();
+                return true;
+            }
+            return false;
+        }
         #endregion
 
         #region Main Menu
@@ -192,7 +221,6 @@ namespace CoursesConsoleApp_1
             }
         }
         #endregion
-
         #region Courses
         static void ShowCourseMenu()
         {
@@ -267,7 +295,7 @@ namespace CoursesConsoleApp_1
             bool found = false;
             for (int i = 0; i < courses.Count; i++)
             {
-                if (courses[i].Name.Contains(name))
+                if (courses[i].Name.Contains(name, StringComparison.OrdinalIgnoreCase))
                 {
                     Console.WriteLine($"{i + 1}. {courses[i].Name} - {courses[i].Price} грн");
                     found = true;
@@ -286,7 +314,9 @@ namespace CoursesConsoleApp_1
                 Console.WriteLine("Курс видалено.");
             }
             else
+            {
                 Console.WriteLine("Невірний індекс.");
+            }
         }
 
         static void SortCoursesMenu()
@@ -339,18 +369,10 @@ namespace CoursesConsoleApp_1
                 return;
             }
 
-            double min = courses[0].Price;
-            double max = courses[0].Price;
-            double sum = 0;
-
-            foreach (var c in courses)
-            {
-                if (c.Price < min) min = c.Price;
-                if (c.Price > max) max = c.Price;
-                sum += c.Price;
-            }
-
-            double avg = sum / courses.Count;
+            double min = courses.Min(c => c.Price);
+            double max = courses.Max(c => c.Price);
+            double sum = courses.Sum(c => c.Price);
+            double avg = courses.Average(c => c.Price);
 
             Console.WriteLine($"Кількість курсів: {courses.Count}");
             Console.WriteLine($"Мінімальна ціна: {min}");
@@ -430,7 +452,7 @@ namespace CoursesConsoleApp_1
             bool found = false;
             for (int i = 0; i < students.Count; i++)
             {
-                if (students[i].Username.Contains(name))
+                if (students[i].Username.Contains(name, StringComparison.OrdinalIgnoreCase))
                 {
                     Console.WriteLine($"{i + 1}. {students[i].Username}");
                     found = true;
@@ -534,7 +556,7 @@ namespace CoursesConsoleApp_1
             bool found = false;
             for (int i = 0; i < teachers.Count; i++)
             {
-                if (teachers[i].Username.Contains(name))
+                if (teachers[i].Username.Contains(name, StringComparison.OrdinalIgnoreCase))
                 {
                     Console.WriteLine($"{i + 1}. {teachers[i].Username}");
                     found = true;
