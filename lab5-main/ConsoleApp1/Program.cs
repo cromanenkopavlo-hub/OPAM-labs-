@@ -112,7 +112,7 @@ namespace CoursesConsoleApp_1
         }
         #endregion
 
-        #region Обробка Студентів / Викладачів (Пошук та Сортування)
+        #region Обробка Студентів / Викладачів / Пошук / Сортування
         static void HandleStudentActions(int ch) {
             var list = FileDataHandler.ReadStudents();
             switch (ch) {
@@ -142,7 +142,7 @@ namespace CoursesConsoleApp_1
         }
         #endregion
 
-        #region CRUD допоміжні
+        #region 
         static void ShowCourses(List<Course> l) {
             Console.WriteLine("\n{0,-5} | {1,-20} | {2,-10}", "ID", "Назва", "Ціна");
             l.ForEach(c => Console.WriteLine("{0,-5} | {1,-20} | {2,10:F2}", c.Id, c.Name, c.Price));
