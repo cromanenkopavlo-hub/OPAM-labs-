@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\Github\\OPAM-labs-\\lab5-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9ECF9970-7677-4C68-AA83-A903F664F807}|ConsoleApp1\\ConsoleApp1.csproj|d:\\github\\opam-labs-\\lab5-main\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9ECF9970-7677-4C68-AA83-A903F664F807}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9ECF9970-7677-4C68-AA83-A903F664F807}|ConsoleApp1\\ConsoleApp1.csproj|d:\\github\\opam-labs-\\lab5-main\\consoleapp1\\filedatahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ECF9970-7677-4C68-AA83-A903F664F807}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\filedatahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9ECF9970-7677-4C68-AA83-A903F664F807}|ConsoleApp1\\ConsoleApp1.csproj|d:\\github\\opam-labs-\\lab5-main\\consoleapp1\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9ECF9970-7677-4C68-AA83-A903F664F807}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9ECF9970-7677-4C68-AA83-A903F664F807}|ConsoleApp1\\ConsoleApp1.csproj|d:\\github\\opam-labs-\\lab5-main\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ECF9970-7677-4C68-AA83-A903F664F807}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9ECF9970-7677-4C68-AA83-A903F664F807}|ConsoleApp1\\ConsoleApp1.csproj|d:\\github\\opam-labs-\\lab5-main\\consoleapp1\\students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9ECF9970-7677-4C68-AA83-A903F664F807}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9ECF9970-7677-4C68-AA83-A903F664F807}|ConsoleApp1\\ConsoleApp1.csproj|d:\\github\\opam-labs-\\lab5-main\\consoleapp1\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9ECF9970-7677-4C68-AA83-A903F664F807}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9ECF9970-7677-4C68-AA83-A903F664F807}|ConsoleApp1\\ConsoleApp1.csproj|d:\\github\\opam-labs-\\lab5-main\\consoleapp1\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ECF9970-7677-4C68-AA83-A903F664F807}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9ECF9970-7677-4C68-AA83-A903F664F807}|ConsoleApp1\\ConsoleApp1.csproj|d:\\github\\opam-labs-\\lab5-main\\consoleapp1\\filedatahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9ECF9970-7677-4C68-AA83-A903F664F807}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\filedatahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9ECF9970-7677-4C68-AA83-A903F664F807}|ConsoleApp1\\ConsoleApp1.csproj|d:\\github\\opam-labs-\\lab5-main\\consoleapp1\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ECF9970-7677-4C68-AA83-A903F664F807}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9ECF9970-7677-4C68-AA83-A903F664F807}|ConsoleApp1\\ConsoleApp1.csproj|d:\\github\\opam-labs-\\lab5-main\\consoleapp1\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -50,19 +50,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "FileDataHandler.cs",
               "DocumentMoniker": "D:\\Github\\OPAM-labs-\\lab5-main\\ConsoleApp1\\FileDataHandler.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\FileDataHandler.cs",
               "ToolTip": "D:\\Github\\OPAM-labs-\\lab5-main\\ConsoleApp1\\FileDataHandler.cs",
               "RelativeToolTip": "ConsoleApp1\\FileDataHandler.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAUwDsAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T17:49:10.382Z"
+              "WhenOpened": "2025-12-22T17:49:10.382Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Teachers.cs",
               "DocumentMoniker": "D:\\Github\\OPAM-labs-\\lab5-main\\ConsoleApp1\\Teachers.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Teachers.cs",
@@ -80,13 +81,13 @@
               "RelativeDocumentMoniker": "ConsoleApp1\\Students.cs",
               "ToolTip": "D:\\Github\\OPAM-labs-\\lab5-main\\ConsoleApp1\\Students.cs",
               "RelativeToolTip": "ConsoleApp1\\Students.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-28T21:29:10.013Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Courses.cs",
               "DocumentMoniker": "D:\\Github\\OPAM-labs-\\lab5-main\\ConsoleApp1\\Courses.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Courses.cs",
@@ -98,16 +99,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Github\\OPAM-labs-\\lab5-main\\ConsoleApp1\\Program.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
               "ToolTip": "D:\\Github\\OPAM-labs-\\lab5-main\\ConsoleApp1\\Program.cs",
               "RelativeToolTip": "ConsoleApp1\\Program.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAADwv3MAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAqwD8AAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T21:22:47.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T21:22:47.667Z"
             }
           ]
         }

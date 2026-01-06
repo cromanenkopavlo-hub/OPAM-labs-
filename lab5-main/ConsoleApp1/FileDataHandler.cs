@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -9,22 +8,17 @@ namespace CoursesConsoleApp_1
 {
     public static class FileDataHandler
     {
-        // Назва папки 
         private const string FolderName = "data";
-
-        // Шляхи до файлів
         public static readonly string CoursesPath = Path.Combine(FolderName, "courses.csv");
         public static readonly string StudentsPath = Path.Combine(FolderName, "students.csv");
         public static readonly string TeachersPath = Path.Combine(FolderName, "teachers.csv");
 
         public static void InitializeFiles()
         {
-            // Створює папку якщо вона не існує
             if (!Directory.Exists(FolderName))
             {
                 Directory.CreateDirectory(FolderName);
             }
-
             EnsureFile(CoursesPath, "Id,Name,Price");
             EnsureFile(StudentsPath, "Id,Email,PasswordHash");
             EnsureFile(TeachersPath, "Id,Username,PasswordHash");
@@ -32,7 +26,6 @@ namespace CoursesConsoleApp_1
 
         private static void EnsureFile(string path, string header)
         {
-            // Перевірка існування та запис 
             if (!File.Exists(path) || new FileInfo(path).Length == 0)
                 File.WriteAllLines(path, new[] { header }, Encoding.UTF8);
         }
@@ -46,30 +39,102 @@ namespace CoursesConsoleApp_1
             }
         }
 
+        // Генерація ID 
         public static int GetNextId(string path)
         {
+            if (!File.Exists(path)) return 1;
             try
             {
-                var lines = File.ReadAllLines(path).Skip(1);
-                return lines.Any() ? lines.Max(l => int.Parse(l.Split(',')[0])) + 1 : 1;
+                string[] lines = File.ReadAllLines(path);
+                int max = 0;
+                for (int i = 1; i < lines.Length; i++)
+                {
+                    string[] parts = lines[i].Split(',');
+                    if (int.TryParse(parts[0], out int id))
+                    {
+                        if (id > max) max = id;
+                    }
+                }
+                return max + 1;
             }
             catch { return 1; }
         }
 
-        public static List<Course> ReadCourses() => File.ReadAllLines(CoursesPath).Skip(1)
-            .Select(l => l.Split(',')).Where(p => p.Length == 3)
-            .Select(p => new Course(int.Parse(p[0]), p[1], double.Parse(p[2]))).ToList();
+        // Читання курсів 
+        public static List<Course> ReadCourses()
+        {
+            List<Course> list = new List<Course>();
+            if (!File.Exists(CoursesPath)) return list;
+            string[] lines = File.ReadAllLines(CoursesPath);
+            for (int i = 1; i < lines.Length; i++)
+            {
+                try
+                {
+                    string[] p = lines[i].Split(',');
+                    if (p.Length == 3)
+                        list.Add(new Course(int.Parse(p[0]), p[1], double.Parse(p[2])));
+                }
+                catch { continue; }
+            }
+            return list;
+        }
 
-        public static List<Students> ReadStudents() => File.ReadAllLines(StudentsPath).Skip(1)
-            .Select(l => l.Split(',')).Where(p => p.Length == 3)
-            .Select(p => new Students(int.Parse(p[0]), p[1], p[2])).ToList();
+        public static List<Students> ReadStudents()
+        {
+            List<Students> list = new List<Students>();
+            if (!File.Exists(StudentsPath)) return list;
+            string[] lines = File.ReadAllLines(StudentsPath);
+            for (int i = 1; i < lines.Length; i++)
+            {
+                try
+                {
+                    string[] p = lines[i].Split(',');
+                    if (p.Length == 3)
+                        list.Add(new Students(int.Parse(p[0]), p[1], p[2]));
+                }
+                catch { continue; }
+            }
+            return list;
+        }
 
-        public static List<Teachers> ReadTeachers() => File.ReadAllLines(TeachersPath).Skip(1)
-            .Select(l => l.Split(',')).Where(p => p.Length == 3)
-            .Select(p => new Teachers(int.Parse(p[0]), p[1], p[2])).ToList();
+        public static List<Teachers> ReadTeachers()
+        {
+            List<Teachers> list = new List<Teachers>();
+            if (!File.Exists(TeachersPath)) return list;
+            string[] lines = File.ReadAllLines(TeachersPath);
+            for (int i = 1; i < lines.Length; i++)
+            {
+                try
+                {
+                    string[] p = lines[i].Split(',');
+                    if (p.Length == 3)
+                        list.Add(new Teachers(int.Parse(p[0]), p[1], p[2]));
+                }
+                catch { continue; }
+            }
+            return list;
+        }
 
-        public static void SaveCourses(List<Course> list) => File.WriteAllLines(CoursesPath, new[] { "Id,Name,Price" }.Concat(list.Select(c => $"{c.Id},{c.Name},{c.Price}")), Encoding.UTF8);
-        public static void SaveStudents(List<Students> list) => File.WriteAllLines(StudentsPath, new[] { "Id,Email,PasswordHash" }.Concat(list.Select(s => $"{s.Id},{s.Email},{s.PasswordHash}")), Encoding.UTF8);
-        public static void SaveTeachers(List<Teachers> list) => File.WriteAllLines(TeachersPath, new[] { "Id,Username,PasswordHash" }.Concat(list.Select(t => $"{t.Id},{t.Username},{t.PasswordHash}")), Encoding.UTF8);
+        // Збереження даних 
+        public static void SaveCourses(List<Course> list)
+        {
+            List<string> lines = new List<string> { "Id,Name,Price" };
+            foreach (var c in list) lines.Add($"{c.Id},{c.Name},{c.Price}");
+            File.WriteAllLines(CoursesPath, lines, Encoding.UTF8);
+        }
+
+        public static void SaveStudents(List<Students> list)
+        {
+            List<string> lines = new List<string> { "Id,Email,PasswordHash" };
+            foreach (var s in list) lines.Add($"{s.Id},{s.Email},{s.PasswordHash}");
+            File.WriteAllLines(StudentsPath, lines, Encoding.UTF8);
+        }
+
+        public static void SaveTeachers(List<Teachers> list)
+        {
+            List<string> lines = new List<string> { "Id,Username,PasswordHash" };
+            foreach (var t in list) lines.Add($"{t.Id},{t.Username},{t.PasswordHash}");
+            File.WriteAllLines(TeachersPath, lines, Encoding.UTF8);
+        }
     }
 }
