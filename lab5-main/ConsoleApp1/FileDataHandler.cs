@@ -5,7 +5,10 @@ using System.Security.Cryptography;
 using System.Text;
 
 namespace CoursesConsoleApp_1
-{
+{/// <summary>
+    /// Статичний клас для керування файловими операціями.
+    /// Забезпечує ініціалізацію, зчитування та збереження даних у форматі CSV.
+    /// </summary>
     public static class FileDataHandler
     {
         private const string FolderName = "data";
@@ -23,13 +26,20 @@ namespace CoursesConsoleApp_1
             EnsureFile(StudentsPath, "Id,Email,PasswordHash");
             EnsureFile(TeachersPath, "Id,Username,PasswordHash");
         }
-
+        /// <summary>
+        /// Створює папку "data" та перевіряє наявність усіх необхідних файлів.
+        /// Якщо файли відсутні, створює їх із відповідними заголовками.
+        /// </summary>
         private static void EnsureFile(string path, string header)
         {
             if (!File.Exists(path) || new FileInfo(path).Length == 0)
                 File.WriteAllLines(path, new[] { header }, Encoding.UTF8);
         }
-
+        /// <summary>
+        /// Перетворює звичайний текст пароля на захищений SHA256 хеш.
+        /// </summary>
+        /// <param name="password">Пароль у відкритому вигляді</param>
+        /// <returns>Рядок зашифрованого пароля у форматі Base64</returns>
         public static string HashPassword(string password)
         {
             using (var sha256 = SHA256.Create())
@@ -40,6 +50,11 @@ namespace CoursesConsoleApp_1
         }
 
         // Генерація ID 
+        /// <summary>
+        /// Розраховує наступний доступний ID для нового запису у файлі.
+        /// </summary>
+        /// <param name="path">Шлях до CSV-файлу</param>
+        /// <returns>Число — новий вільний ідентифікатор</returns>
         public static int GetNextId(string path)
         {
             if (!File.Exists(path)) return 1;
@@ -61,6 +76,10 @@ namespace CoursesConsoleApp_1
         }
 
         // Читання курсів 
+        /// <summary>
+        /// Зчитує файл courses.csv та перетворює його рядки на список об'єктів Course.
+        /// </summary>
+        /// <returns>Список об'єктів курсів</returns>
         public static List<Course> ReadCourses()
         {
             List<Course> list = new List<Course>();
@@ -78,7 +97,10 @@ namespace CoursesConsoleApp_1
             }
             return list;
         }
-
+        /// <summary>
+        /// Зчитує дані студентів для авторизації.
+        /// </summary>
+        /// <returns>Список об'єктів студентів</returns>
         public static List<Students> ReadStudents()
         {
             List<Students> list = new List<Students>();
@@ -96,7 +118,11 @@ namespace CoursesConsoleApp_1
             }
             return list;
         }
-
+        /// <summary>
+        /// Виконує повний перезапис файлу teachers.csv актуальними даними.
+        /// Використовується для синхронізації змін після редагування або реєстрації.
+        /// </summary>
+        /// <param name="list">Список об'єктів викладачів для збереження</param>
         public static List<Teachers> ReadTeachers()
         {
             List<Teachers> list = new List<Teachers>();
@@ -116,6 +142,10 @@ namespace CoursesConsoleApp_1
         }
 
         // Збереження даних 
+        /// <summary>
+        /// Повністю перезаписує файл курсів новими даними із пам'яті.
+        /// </summary>
+        /// <param name="list">Актуальний список курсів</param>
         public static void SaveCourses(List<Course> list)
         {
             List<string> lines = new List<string> { "Id,Name,Price" };
