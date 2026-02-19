@@ -1,37 +1,53 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿// <copyright file="Courses.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
 namespace CoursesConsoleApp_1
-{/// <summary>
- /// Представляє модель навчального курсу.
- /// Містить дані про ідентифікатор, назву та вартість.
- /// </summary>
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    /// <summary>
+    /// Представляє модель навчального курсу.
+    /// Містить дані про ідентифікатор, назву та вартість.
+    /// </summary>
     public class Course
-    {/// <summary>Унікальний номер курсу.</summary>
-        public int Id { get; set; }
-        /// <summary>Назва навчальної програми.</summary>
-        public string Name { get; set; } = "";
-        /// <summary>Вартість навчання для даного курсу.</summary>
-        public double Price { get; set; } = 0;
+    {
         /// <summary>
-        /// Конструктор за замовчуванням. 
-        /// Необхідний для створення порожніх об'єктів.
+        /// Ініціалізує новий екземпляр класу <see cref="Course"/>.
         /// </summary>
-        public Course() { }
+        public Course()
+        {
+        }
 
         /// <summary>
-        /// Конструктор з параметрами для створення нового курсу.
+        /// Ініціалізує новий екземпляр класу <see cref="Course"/>.
         /// </summary>
-        /// <param name="id">Ідентифікатор курсу</param>
-        /// <param name="name">Назва курсу</param>
-        /// <param name="price">Вартість курсу</param>
+        /// <param name="id">Ідентифікатор курсу.</param>
+        /// <param name="name">Назва курсу.</param>
+        /// <param name="price">Вартість курсу.</param>
         public Course(int id, string name, double price)
         {
-            Id = id;
-            Name = name ?? "";
-            Price = price;
+            this.Id = id;
+            this.Name = name ?? string.Empty;
+            this.Price = price;
         }
+
+        /// <summary>
+        /// Gets or sets унікальний номер курсу.
+        /// </summary>
+        public int Id { get; set; }
+
+        /// <summary>
+        /// Gets or sets назву навчальної програми.
+        /// </summary>
+        public string Name { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Gets or sets вартість навчання для даного курсу.
+        /// </summary>
+        public double Price { get; set; } = 0;
     }
 }

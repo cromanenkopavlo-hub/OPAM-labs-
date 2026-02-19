@@ -1,0 +1,15 @@
+D:\Github\OPAM-labs-\lab5-main\ConsoleApp1\obj\Debug\net9.0\Courses_App.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\OPAM-labs-\lab5-main\ConsoleApp1\obj\Debug\net9.0\Courses_App.AssemblyInfoInputs.cache
+D:\Github\OPAM-labs-\lab5-main\ConsoleApp1\obj\Debug\net9.0\Courses_App.AssemblyInfo.cs
+D:\Github\OPAM-labs-\lab5-main\ConsoleApp1\obj\Debug\net9.0\Courses_App.csproj.CoreCompileInputs.cache
+D:\Github\OPAM-labs-\lab5-main\ConsoleApp1\obj\Debug\net9.0\Courses_App.sourcelink.json
+D:\Github\OPAM-labs-\lab5-main\ConsoleApp1\bin\Debug\net9.0\Courses_App.exe
+D:\Github\OPAM-labs-\lab5-main\ConsoleApp1\bin\Debug\net9.0\Courses_App.deps.json
+D:\Github\OPAM-labs-\lab5-main\ConsoleApp1\bin\Debug\net9.0\Courses_App.runtimeconfig.json
+D:\Github\OPAM-labs-\lab5-main\ConsoleApp1\bin\Debug\net9.0\Courses_App.dll
+D:\Github\OPAM-labs-\lab5-main\ConsoleApp1\bin\Debug\net9.0\Courses_App.pdb
+D:\Github\OPAM-labs-\lab5-main\ConsoleApp1\obj\Debug\net9.0\Courses_App.dll
+D:\Github\OPAM-labs-\lab5-main\ConsoleApp1\obj\Debug\net9.0\refint\Courses_App.dll
+D:\Github\OPAM-labs-\lab5-main\ConsoleApp1\obj\Debug\net9.0\Courses_App.pdb
+D:\Github\OPAM-labs-\lab5-main\ConsoleApp1\obj\Debug\net9.0\Courses_App.genruntimeconfig.cache
+D:\Github\OPAM-labs-\lab5-main\ConsoleApp1\obj\Debug\net9.0\ref\Courses_App.dll

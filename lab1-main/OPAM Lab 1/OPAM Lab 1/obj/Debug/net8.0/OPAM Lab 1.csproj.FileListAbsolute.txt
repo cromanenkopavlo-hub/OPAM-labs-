@@ -1,0 +1,14 @@
+D:\Github\OPAM Lab 1\OPAM Lab 1\bin\Debug\net8.0\OPAM Lab 1.exe
+D:\Github\OPAM Lab 1\OPAM Lab 1\bin\Debug\net8.0\OPAM Lab 1.deps.json
+D:\Github\OPAM Lab 1\OPAM Lab 1\bin\Debug\net8.0\OPAM Lab 1.runtimeconfig.json
+D:\Github\OPAM Lab 1\OPAM Lab 1\bin\Debug\net8.0\OPAM Lab 1.dll
+D:\Github\OPAM Lab 1\OPAM Lab 1\bin\Debug\net8.0\OPAM Lab 1.pdb
+D:\Github\OPAM Lab 1\OPAM Lab 1\obj\Debug\net8.0\OPAM Lab 1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\OPAM Lab 1\OPAM Lab 1\obj\Debug\net8.0\OPAM Lab 1.AssemblyInfoInputs.cache
+D:\Github\OPAM Lab 1\OPAM Lab 1\obj\Debug\net8.0\OPAM Lab 1.AssemblyInfo.cs
+D:\Github\OPAM Lab 1\OPAM Lab 1\obj\Debug\net8.0\OPAM Lab 1.csproj.CoreCompileInputs.cache
+D:\Github\OPAM Lab 1\OPAM Lab 1\obj\Debug\net8.0\OPAM Lab 1.dll
+D:\Github\OPAM Lab 1\OPAM Lab 1\obj\Debug\net8.0\refint\OPAM Lab 1.dll
+D:\Github\OPAM Lab 1\OPAM Lab 1\obj\Debug\net8.0\OPAM Lab 1.pdb
+D:\Github\OPAM Lab 1\OPAM Lab 1\obj\Debug\net8.0\OPAM Lab 1.genruntimeconfig.cache
+D:\Github\OPAM Lab 1\OPAM Lab 1\obj\Debug\net8.0\ref\OPAM Lab 1.dll

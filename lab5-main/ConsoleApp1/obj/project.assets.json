@@ -46,9 +46,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\OPAM-labs-\\lab5-main\\ConsoleApp1\\ConsoleApp1.csproj",
-      "projectName": "ConsoleApp1",
-      "projectPath": "D:\\Github\\OPAM-labs-\\lab5-main\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "D:\\Github\\OPAM-labs-\\lab5-main\\ConsoleApp1\\Courses_App.csproj",
+      "projectName": "Courses_App",
+      "projectPath": "D:\\Github\\OPAM-labs-\\lab5-main\\ConsoleApp1\\Courses_App.csproj",
       "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
       "outputPath": "D:\\Github\\OPAM-labs-\\lab5-main\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",

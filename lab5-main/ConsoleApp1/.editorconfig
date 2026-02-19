@@ -1,0 +1,83 @@
+root = true
+
+[]
+charset = utf-8
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+[.cs]
+dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = false
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+csharp_indent_case_contents = true
+csharp_indent_switch_labels = true
+csharp_space_after_cast = false
+csharp_space_after_keywords_in_control_flow_statements = true
+dotnet_naming_rule.interface_should_be_begins_with_i.severity = warning
+dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
+dotnet_naming_rule.interface_should_be_begins_with_i.style = begins_with_i
+
+dotnet_naming_rule.types_should_be_pascal_case.severity = warning
+dotnet_naming_rule.types_should_be_pascal_case.symbols = types
+dotnet_naming_rule.types_should_be_pascal_case.style = pascal_case
+dotnet_diagnostic.SA1600.severity = warning
+dotnet_diagnostic.SA1633.severity = none
+dotnet_diagnostic.SA1101.severity = none
+dotnet_diagnostic.SA1650.severity = none
+[*.cs]
+# Стандартні налаштування форматування
+charset = utf-8
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Правила іменування
+dotnet_naming_rule.interface_should_be_begins_with_i.severity = warning
+dotnet_naming_rule.types_should_be_pascal_case.severity = warning
+
+
+# SA1633: File header should be present (Заголовок файлу)
+dotnet_diagnostic.SA1633.severity = none
+
+# SA1101: Prefix local calls with this (Використання this.)
+dotnet_diagnostic.SA1101.severity = none
+
+# SA1200: Using directives should be placed correctly (Using всередині namespace)
+dotnet_diagnostic.SA1200.severity = none
+
+
+# SA1600: Elements should be documented (Наявність коментарів <summary>)
+dotnet_diagnostic.SA1600.severity = warning
+
+# SA1623: Property summary documentation should begin with standard text
+dotnet_diagnostic.SA1623.severity = none
+
+# SA1642: Constructor summary documentation should begin with standard text
+dotnet_diagnostic.SA1642.severity = none
+
+# SA1629: Documentation text should end with a period (Крапка в кінці коментаря)
+dotnet_diagnostic.SA1629.severity = none
+
+# SA1122: Use string.Empty for empty strings (Заборона "")
+dotnet_diagnostic.SA1122.severity = none
+
+
+# SA1505: Opening braces should not be followed by blank line
+dotnet_diagnostic.SA1505.severity = warning
+
+# SA1028: Code should not contain trailing whitespace (Пробіли в кінці рядка)
+dotnet_diagnostic.SA1028.severity = warning
+
+# SA1649: File name should match first type name (Назва файлу = Назва класу)
+dotnet_diagnostic.SA1649.severity = none
+
+# SA1400: Access modifier should be declared (Модифікатори public/private)
+dotnet_diagnostic.SA1400.severity = warning
+# A1201 написання класу з малої букви 
+dotnet_diagnostic.SA1201.severity = none 
+
