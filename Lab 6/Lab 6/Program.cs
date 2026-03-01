@@ -100,3 +100,32 @@ class Dairy : Food
         return (caloriesPer100g / 100) * grams;
     }
 }
+class Program
+{
+    static void Main(string[] args)
+    {
+        List<Food> foods = new List<Food>();
+
+        Fruit apple = new Fruit();
+        apple.name = "Яблуко";
+        apple.caloriesPer100g = 52;
+
+        Meat chicken = new Meat();
+        chicken.name = "Курятина";
+        chicken.caloriesPer100g = 239;
+
+        Dairy milk = new Dairy();
+        milk.name = "Молоко";
+        milk.caloriesPer100g = 60;
+
+        foods.Add(apple);
+        foods.Add(chicken);
+        foods.Add(milk);
+
+        foreach (Food food in foods)
+        {
+            double calories = food.CalculateCalories(100);
+            Console.WriteLine($"{food.name} (100 г) = {calories} ккал");
+        }
+    }
+}
