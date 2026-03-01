@@ -86,3 +86,17 @@ class Fruit : Food
         return (caloriesPer100g / 100) * grams;
     }
 }
+class Meat : Food
+{
+    public override double CalculateCalories(double grams)
+    {
+        return (caloriesPer100g / 100) * grams;
+    }
+}
+class Dairy : Food
+{
+    public override double CalculateCalories(double grams)
+    {
+        return (caloriesPer100g / 100) * grams;
+    }
+}
