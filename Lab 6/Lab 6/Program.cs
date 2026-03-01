@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-interface Refuelable
+/*interface Refuelable
 {
     void Refill();
 }
@@ -69,5 +69,20 @@ class Program
         }
 
   
+    }
+}*/
+abstract class Food
+{
+    public string name;
+    public double caloriesPer100g;
+
+    public abstract double CalculateCalories(double grams);
+}
+
+class Fruit : Food
+{
+    public override double CalculateCalories(double grams)
+    {
+        return (caloriesPer100g / 100) * grams;
     }
 }
