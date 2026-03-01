@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\OPAM-labs-\\Test2\\Test1\\Test1.csproj": {}
+    "D:\\Github\\OPAM-labs-\\Lab 6\\Lab 6\\Lab 6.csproj": {}
   },
   "projects": {
-    "D:\\Github\\OPAM-labs-\\Test2\\Test1\\Test1.csproj": {
+    "D:\\Github\\OPAM-labs-\\Lab 6\\Lab 6\\Lab 6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\OPAM-labs-\\Test2\\Test1\\Test1.csproj",
-        "projectName": "Test1",
-        "projectPath": "D:\\Github\\OPAM-labs-\\Test2\\Test1\\Test1.csproj",
+        "projectUniqueName": "D:\\Github\\OPAM-labs-\\Lab 6\\Lab 6\\Lab 6.csproj",
+        "projectName": "Lab 6",
+        "projectPath": "D:\\Github\\OPAM-labs-\\Lab 6\\Lab 6\\Lab 6.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\OPAM-labs-\\Test2\\Test1\\obj\\",
+        "outputPath": "D:\\Github\\OPAM-labs-\\Lab 6\\Lab 6\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

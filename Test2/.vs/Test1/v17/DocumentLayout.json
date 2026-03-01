@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Github\\Test2\\",
+  "WorkspaceRootPath": "D:\\Github\\OPAM-labs-\\Test2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E2DBD259-D497-46B7-9DD6-5935D2FFADB9}|Test1\\Test1.csproj|d:\\github\\test2\\test1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2DBD259-D497-46B7-9DD6-5935D2FFADB9}|Test1\\Test1.csproj|d:\\github\\opam-labs-\\test2\\test1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2DBD259-D497-46B7-9DD6-5935D2FFADB9}|Test1\\Test1.csproj|solutionrelative:test1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Github\\Test2\\Test1\\Program.cs",
+              "DocumentMoniker": "D:\\Github\\OPAM-labs-\\Test2\\Test1\\Program.cs",
               "RelativeDocumentMoniker": "Test1\\Program.cs",
-              "ToolTip": "D:\\Github\\Test2\\Test1\\Program.cs",
+              "ToolTip": "D:\\Github\\OPAM-labs-\\Test2\\Test1\\Program.cs",
               "RelativeToolTip": "Test1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T21:00:56.856Z",
               "EditorCaption": ""
