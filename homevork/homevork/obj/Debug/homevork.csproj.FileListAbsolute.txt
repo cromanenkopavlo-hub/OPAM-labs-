@@ -1,0 +1,16 @@
+D:\Github\OPAM-labs-\homevork\homevork\bin\Debug\homevork.exe.config
+D:\Github\OPAM-labs-\homevork\homevork\bin\Debug\homevork.exe
+D:\Github\OPAM-labs-\homevork\homevork\bin\Debug\homevork.pdb
+D:\Github\OPAM-labs-\homevork\homevork\obj\Debug\homevork.csproj.AssemblyReference.cache
+D:\Github\OPAM-labs-\homevork\homevork\obj\Debug\homevork.Form1.resources
+D:\Github\OPAM-labs-\homevork\homevork\obj\Debug\homevork.Properties.Resources.resources
+D:\Github\OPAM-labs-\homevork\homevork\obj\Debug\homevork.csproj.GenerateResource.cache
+D:\Github\OPAM-labs-\homevork\homevork\obj\Debug\homevork.csproj.CoreCompileInputs.cache
+D:\Github\OPAM-labs-\homevork\homevork\obj\Debug\homevork.exe
+D:\Github\OPAM-labs-\homevork\homevork\obj\Debug\homevork.pdb
+D:\Github\OPAM-labs-\homevork\homevork\obj\Debug\homevork.exe.config
+D:\Github\OPAM-labs-\homevork\homevork\obj\Debug\homevork.Form2.resources
+D:\Github\OPAM-labs-\homevork\homevork\bin\Debug\Newtonsoft.Json.dll
+D:\Github\OPAM-labs-\homevork\homevork\bin\Debug\Newtonsoft.Json.xml
+D:\Github\OPAM-labs-\homevork\homevork\obj\Debug\homevork.csproj.Up2Date
+D:\Github\OPAM-labs-\homevork\homevork\obj\Debug\homevork.ProdactControl.resources
