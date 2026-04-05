@@ -21,6 +21,19 @@
           "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BankTerminal.cs",
+              "DocumentMoniker": "D:\\Github\\OPAM-labs-\\Lab 7\\Lab 7\\BankTerminal.cs",
+              "RelativeDocumentMoniker": "Lab 7\\BankTerminal.cs",
+              "ToolTip": "D:\\Github\\OPAM-labs-\\Lab 7\\Lab 7\\BankTerminal.cs",
+              "RelativeToolTip": "Lab 7\\BankTerminal.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAiwCYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T13:33:10.133Z",
+              "IsPinned": true
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
@@ -34,26 +47,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BankTerminal.cs",
-              "DocumentMoniker": "D:\\Github\\OPAM-labs-\\Lab 7\\Lab 7\\BankTerminal.cs",
-              "RelativeDocumentMoniker": "Lab 7\\BankTerminal.cs",
-              "ToolTip": "D:\\Github\\OPAM-labs-\\Lab 7\\Lab 7\\BankTerminal.cs",
-              "RelativeToolTip": "Lab 7\\BankTerminal.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACUAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T13:33:10.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Github\\OPAM-labs-\\Lab 7\\Lab 7\\Program.cs",
               "RelativeDocumentMoniker": "Lab 7\\Program.cs",
               "ToolTip": "D:\\Github\\OPAM-labs-\\Lab 7\\Lab 7\\Program.cs",
               "RelativeToolTip": "Lab 7\\Program.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAIwC8AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-29T12:53:28.496Z",
               "EditorCaption": ""

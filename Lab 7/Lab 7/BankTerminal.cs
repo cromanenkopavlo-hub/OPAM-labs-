@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab_7
+/*namespace Lab_7
 {
 
-   /* public class BankTerminal
+    public class BankTerminal
     {
         
         public Action<int> OnMoneyWithdraw;
@@ -35,5 +35,5 @@ namespace Lab_7
             terminal.OnMoneyWithdraw += amount => Console.WriteLine($"Знято {amount} грн");
             terminal.Withdraw(50); 
         }
-    }*/
-}
+    }
+}*/
