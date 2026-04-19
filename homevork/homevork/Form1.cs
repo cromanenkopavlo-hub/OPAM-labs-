@@ -119,5 +119,10 @@ namespace homevork
         {
 
         }
+
+        private void EmailTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
