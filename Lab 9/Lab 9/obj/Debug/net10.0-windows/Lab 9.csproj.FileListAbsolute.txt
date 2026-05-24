@@ -1,0 +1,17 @@
+D:\Github\OPAM-labs-\Lab 9\Lab 9\bin\Debug\net10.0-windows\Lab 9.exe
+D:\Github\OPAM-labs-\Lab 9\Lab 9\bin\Debug\net10.0-windows\Lab 9.deps.json
+D:\Github\OPAM-labs-\Lab 9\Lab 9\bin\Debug\net10.0-windows\Lab 9.runtimeconfig.json
+D:\Github\OPAM-labs-\Lab 9\Lab 9\bin\Debug\net10.0-windows\Lab 9.dll
+D:\Github\OPAM-labs-\Lab 9\Lab 9\bin\Debug\net10.0-windows\Lab 9.pdb
+D:\Github\OPAM-labs-\Lab 9\Lab 9\obj\Debug\net10.0-windows\Lab_9.Form1.resources
+D:\Github\OPAM-labs-\Lab 9\Lab 9\obj\Debug\net10.0-windows\Lab 9.csproj.GenerateResource.cache
+D:\Github\OPAM-labs-\Lab 9\Lab 9\obj\Debug\net10.0-windows\Lab 9.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\OPAM-labs-\Lab 9\Lab 9\obj\Debug\net10.0-windows\Lab 9.AssemblyInfoInputs.cache
+D:\Github\OPAM-labs-\Lab 9\Lab 9\obj\Debug\net10.0-windows\Lab 9.AssemblyInfo.cs
+D:\Github\OPAM-labs-\Lab 9\Lab 9\obj\Debug\net10.0-windows\Lab 9.csproj.CoreCompileInputs.cache
+D:\Github\OPAM-labs-\Lab 9\Lab 9\obj\Debug\net10.0-windows\Lab 9.sourcelink.json
+D:\Github\OPAM-labs-\Lab 9\Lab 9\obj\Debug\net10.0-windows\Lab 9.dll
+D:\Github\OPAM-labs-\Lab 9\Lab 9\obj\Debug\net10.0-windows\refint\Lab 9.dll
+D:\Github\OPAM-labs-\Lab 9\Lab 9\obj\Debug\net10.0-windows\Lab 9.pdb
+D:\Github\OPAM-labs-\Lab 9\Lab 9\obj\Debug\net10.0-windows\Lab 9.genruntimeconfig.cache
+D:\Github\OPAM-labs-\Lab 9\Lab 9\obj\Debug\net10.0-windows\ref\Lab 9.dll
